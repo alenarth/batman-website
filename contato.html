@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./contato.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="./OIP.jpg"/>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="fcf-body">
+
+        <div id="fcf-form">
+        <h3 class="fcf-h3">Contate-nos</h3>
+    
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Seu nome</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Seu endereço de email</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Sua mensagem</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
+            </div>
+    
+        </form>
+        </div>
+    
+    </div>
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="./OIP.jpg"/>
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Arthur Alen</span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+   background-image: url(./the-batman-2022-movies-red-background-dark-background-dc-1080x2340-7414.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+header{
+   height: 90px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: black;
+}
+nav{
+   width: 60%;
+}
+ul{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+li {
+   list-style: none;
+   color: aliceblue;
+   cursor: pointer;
+   font-size: 19px;
+   transition: .5s;
+   font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover{
+   color: #D21617;
+}
+h3{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+   width: 150px;
+   height: auto;
+}
+.fotos-cards-container{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+}
+
+.fotos-content{
+   width: 90%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   row-gap: 20px;
+   column-gap: 40px;
+}
+
+.card{
+   width: 100%;
+   height: 600px;
+   background-size: cover;
+   background-position: 50% 50%;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 1s;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding: 0 0 20px 10px;
+}
+.card:hover{
+   transform: scale(1.02);
+}
+
+.foto-1 {
+   background-image: url(https://wallpapercave.com/wp/wp9429763.jpg);
+}
+.foto-2 {
+   background-image: url(https://th.bing.com/th/id/OIP.NSe1zvf6cVzowgMLC9x66AHaLC?pid=ImgDet&w=700&h=1044&rs=1);
+}
+.foto-3 {
+   background-image: url(https://www.themoviedb.org/t/p/original/mhOo2kYmeTvH9R8c1HGzh8Tpkzg.jpg);
+}
+
+footer{
+   height: 300px;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   background-color: black;
+}
+
+span{
+   color: #fff;
+   font-family: 'Kdam Thmor Pro', sans-serif;
+   
+}
+
+.footer-navigation{
+   display: none;
+}
+.footer-list{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+li {
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: 'Kdam Thmor Pro', sans-serif;}
+
+  @media(max-width: 768px){
+   .footer-navigation{
+       display: block;
+   }
+   nav {
+      display: none;
+  }
+  
+   h3{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: aliceblue;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      font-size: 100px
+    }
+    
+   .fotos-content {
+       grid-template-columns: 1fr;
+       margin-top: 20px;
+   }
+}   

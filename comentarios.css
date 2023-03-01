@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   list-style: none;
+   text-decoration: none;
+}
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover{
+    color: #D21617;
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner{
+    background-image: url(https://www.themoviedb.org/t/p/w1000_and_h563_face/cgSx1Owixa4HGy2TV47izxO6Ezx.jpg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+h2{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 100px auto;
+    width: 90%;
+    max-width: 800px; /* optional: set a maximum width for the form */
+    padding: 20px;
+    height: 600px;
+}
+.comentario-input{
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 0;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    margin-bottom: 420px;
+}
+.comentario-classe{
+    color: aliceblue;
+    background-color: #520909;
+    width: 100%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+}
+h3{
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+    
+    .button {
+        width: 100%;
+        height: 200px;
+    }
+    nav {
+       display: none;
+   }
+}
